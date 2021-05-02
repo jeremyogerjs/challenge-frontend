@@ -11,8 +11,7 @@ h2{
     font-weight: 700;
     color: hsl(0, 0%, 95%);
 }
-
-button{
+.btn{
     padding: 1em 3em;
     border: none;
     border-radius: 25px;
@@ -20,6 +19,10 @@ button{
     font-family: 'Lexend Deca', sans-serif;
     cursor: pointer;
     
+}
+.btn:hover{
+    color: white;
+    border:1px solid white;
 }
 .container{
     width: max-content;
@@ -43,19 +46,44 @@ button{
     background-color: hsl(31, 77%, 52%);
     border-radius: 10px 0 0 10px;
 }
-.card--orange button{
+.btn--orange{
     color: hsl(31, 77%, 52%);
+}
+.btn--orange:hover{
+    background-color: hsl(31, 77%, 52%);
 }
 .card--darkblue{
     background-color: hsl(179, 100%, 13%);
     border-radius: 0 10px 10px 0;
 }
-.card--darkblue button{
+.btn--darkblue{
     color: hsl(179, 100%, 13%)
+}
+.btn--darkblue:hover{
+    background-color: hsl(179, 100%, 13%);
 }
 .card--blue{
     background-color: hsl(184, 100%, 22%);
 }
-.card--blue button{
+.btn--blue{
     color: hsl(184, 100%, 22%);
+}
+.btn--blue:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+
+
+@media screen and (max-width:500px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 5em auto;
+    }
+    .card--orange{
+        border-radius: 10px 10px 0 0;
+    }
+    .card--darkblue{
+        border-radius: 0 0 10px 10px;
+    }
 }
